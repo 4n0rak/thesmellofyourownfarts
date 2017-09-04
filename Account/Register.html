@@ -63,21 +63,58 @@
   							</div>
   						</div>
   						<div class="form-group">
+                <label class="col-md-3 control-label" for="Password">Password</label>
+                <div class="col-md-9">
+                  <input class="form-control" type="password" data-val="true" data-val-length="Password length should be between 6 and 100 characters." data-val-length-max="100" data-val-length-min="6" data-val-required="A value is required." id="Password" name="Password" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACIUlEQVQ4EX2TOYhTURSG87IMihDsjGghBhFBmHFDHLWwSqcikk4RRKJgk0KL7C8bMpWpZtIqNkEUl1ZCgs0wOo0SxiLMDApWlgOPrH7/5b2QkYwX7jvn/uc//zl3edZ4PPbNGvF4fC4ajR5VrNvt/mo0Gr1ZPOtfgWw2e9Lv9+chX7cs64CS4Oxg3o9GI7tUKv0Q5o1dAiTfCgQCLwnOkfQOu+oSLyJ2A783HA7vIPLGxX0TgVwud4HKn0nc7Pf7N6vV6oZHkkX8FPG3uMfgXC0Wi2vCg/poUKGGcagQI3k7k8mcp5slcGswGDwpl8tfwGJg3xB6Dvey8vz6oH4C3iXcFYjbwiDeo1KafafkC3NjK7iL5ESFGQEUF7Sg+ifZdDp9GnMF/KGmfBdT2HCwZ7TwtrBPC7rQaav6Iv48rqZwg+F+p8hOMBj0IbxfMdMBrW5pAVGV/ztINByENkU0t5BIJEKRSOQ3Aj+Z57iFs1R5NK3EQS6HQqF1zmQdzpFWq3W42WwOTAf1er1PF2USFlC+qxMvFAr3HcexWX+QX6lUvsKpkTyPSEXJkw6MQ4S38Ljdbi8rmM/nY+CvgNcQqdH6U/xrYK9t244jZv6ByUOSiDdIfgBZ12U6dHEHu9TpdIr8F0OP692CtzaW/a6y3y0Wx5kbFHvGuXzkgf0xhKnPzA4UTyaTB8Ph8AvcHi3fnsrZ7Wore02YViqVOrRXXPhfqP8j6MYlawoAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                  <span class="text-danger field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                </div>
   						</div>
   						<div class="form-group">
+                <label class="col-md-3 control-label" for="ConfirmPassword">Password Confirmation</label>
+                <div class="col-md-9">
+                  <input class="form-control" type="password" data-val="true" data-val-equalto="Password and it's confimation don't match." data-val-equalto-other="*.Password" id="ConfirmPassword" name="ConfirmPassword" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACIUlEQVQ4EX2TOYhTURSG87IMihDsjGghBhFBmHFDHLWwSqcikk4RRKJgk0KL7C8bMpWpZtIqNkEUl1ZCgs0wOo0SxiLMDApWlgOPrH7/5b2QkYwX7jvn/uc//zl3edZ4PPbNGvF4fC4ajR5VrNvt/mo0Gr1ZPOtfgWw2e9Lv9+chX7cs64CS4Oxg3o9GI7tUKv0Q5o1dAiTfCgQCLwnOkfQOu+oSLyJ2A783HA7vIPLGxX0TgVwud4HKn0nc7Pf7N6vV6oZHkkX8FPG3uMfgXC0Wi2vCg/poUKGGcagQI3k7k8mcp5slcGswGDwpl8tfwGJg3xB6Dvey8vz6oH4C3iXcFYjbwiDeo1KafafkC3NjK7iL5ESFGQEUF7Sg+ifZdDp9GnMF/KGmfBdT2HCwZ7TwtrBPC7rQaav6Iv48rqZwg+F+p8hOMBj0IbxfMdMBrW5pAVGV/ztINByENkU0t5BIJEKRSOQ3Aj+Z57iFs1R5NK3EQS6HQqF1zmQdzpFWq3W42WwOTAf1er1PF2USFlC+qxMvFAr3HcexWX+QX6lUvsKpkTyPSEXJkw6MQ4S38Ljdbi8rmM/nY+CvgNcQqdH6U/xrYK9t244jZv6ByUOSiDdIfgBZ12U6dHEHu9TpdIr8F0OP692CtzaW/a6y3y0Wx5kbFHvGuXzkgf0xhKnPzA4UTyaTB8Ph8AvcHi3fnsrZ7Wore02YViqVOrRXXPhfqP8j6MYlawoAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                  <span class="text-danger field-validation-valid" data-valmsg-for="ConfirmPassword" data-valmsg-replace="true"></span>
+                </div>
   						</div>
   						<div class="form-group">
+                <label class="col-md-3 control-label" for="Subdomain">Username</label>
+                <div class="col-md-9">
+                  <input onkeyup="checkSubdomain()" class="form-control" type="text" data-val="true" data-val-length="Password length should be between 2 and 100 characters." data-val-length-max="100" data-val-length-min="2" data-val-required="A value is required." id="Subdomain" name="Subdomain" value="" data-original-title="" title="">
+                  <span id="SubdomainValidation" class="text-danger"></span>
+                </div>
   						</div>
   						<div class="form-group">
+                <label class="col-md-3 control-label" for="Name">Name</label>
+                <div class="col-md-9">
+                  <input class="form-control" type="text" data-val="true" data-val-length="Password length should be between 2 and 100 characters." data-val-length-max="100" data-val-length-min="2" data-val-required="A value is required." id="Name" name="Name" value="">
+                  <span class="text-danger field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span>
+                </div>
   						</div>
   						<div class="form-group">
+                <div class="col-md-9 col-md-offset-3">
+                  <label>
+                    <input checked="" class="checkbox-inline" data-val="true" data-val-required="The Notifications field is required." id="Notifications" name="Notifications" type="checkbox" value="TRUE">
+                    Notifications
+                  </label>
+                </div>
   						</div>
   						<div class="form-group">
+                <div class="col-md-9 col-md-offset-3">
+                 <label>
+                  <input id="TermsCB" type="checkbox" value="FALSE" class="checkbox-inline">
+                  I have read and accept the
+                  <a target="_blank" href="/Home/Terms">Terms and Conditions</a>
+                 </label>
+                 <span id="TermsValidation" class="text-danger"></span>
+                </div>
   						</div>
   						<div class="form-group">
+                <div class="col-md-offset-3 col-md-9">
+                  <button type="submit" id="RegisterBtn" class="btn btn-primary-outline" data-loading-text="Loading...">Register</button>
+                </div>
   						</div>
-  						<div class="form-group">
-  						</div>
+              <input name="__RequestVerificationToken" type="hidden" value="CfDJ8ATf4Su878dOnC1xwa5QU5udxUV-HY_tMs7S6YD-dZ68DAslIzIAUKCx4GtDkRrkKd1_1T2FFwaN2Ip8RTuj6Xi5kp1A3gDQRbb8OZuScBIlJC3fXT7pZFisCP_7PfJImOnJgLu8ReOgc6lqLb7RYm4">
+              <input name="Notifications" type="hidden" value="false">
   					</form>
   				</div>
   			</div>
