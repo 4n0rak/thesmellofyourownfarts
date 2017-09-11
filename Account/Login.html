@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html dir="ltr" class="Account Login">
+	<head prefix="">
+  	<meta charset="utf-8">
+  	<meta http-equiv="X-UA Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  	<title>The Smell of Your Own Farts - Login </title>
+    <link rel="stylesheet" type="text/css" href="../css/application-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/toolkit-ltr.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/toolkit-rtl.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+		<link rel="icon" src="~/img/favicon.png">
+		<script src="/lib/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript"></script>
+	</head>
+	<body class="with-top-navbar" style>
+		<div class="growl" id="app-growl"></div>
+	  	<nav dir="ltr" class="navbar navbar-inverse navbar-fixed-top app-navbar">
+	  		<div dir="ltr" class="container">	
+	  			<div class="navbar-header">			
+		  			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-main">
+		  				<span class="sr-only">Menu</span>
+		  				<span class="icon-bar"></span>
+		  				<span class="icon-bar"></span>
+		  				<span class="icon-bar"></span>
+	  				</button>
+	  				<a href="https://www.thesmellofyourownfarts.com" class="navbar-brand">
+	  					<span>
+	  					  	<span class="hidden-sm hidden-xs hidden-xxs">the smell of your own farts</span>
+	  						<img style="padding-bottom:7px;" src="img/Logo.png">
+	  					</span>
+	  				</a>
+	  				<div class="col-xs-3"></div>
+	  			</div>
+	  			<div class="navbar-collapse collapse" id="navbar-collapse-main">
+	  				<ul class="nav navbar-nav navbar-right">
+	  					<li>
+	  						<a href="/Account/Register">Register</a>
+	  					</li>
+	  					<li>
+	  						<a href="">Login</a>
+	  					</li>
+	  					<li>
+	  						<a href="">About Us</a>
+	  					</li>
+	  					<li>
+	  						<a href="">Contact Us</a>
+	  					</li>
+	  				</ul>
+	  			</div>
+	  		</div>
+	  	</nav>
+		<div class="container container-mobile p-t-md">
+			<div class="text-center">
+				<h4>Login</h4>
+			</div>
+			<div class="col-md-offset-3 col-md-6 col-xs-12" style="padding-top:30px;">
+				<div class="panel panel-default panel-profile m-b-md">
+					<div class="panel-body text-center">
+						<div id="Container" class="text-center" style="padding-top:20px;">
+							<div class="container-fluid">
+								<br>
+								<br>
+								<div class="container-content-middle">
+									<form method="post" class="m-x-auto text-center app-login-form" action="/Account/Login" novalidate="novalidate">
+										<div class="form-group">
+											<input type="text" placeholder="Email or Username" class="form-control" data-val="true" data-val-required-"A value is required" id="Email" namme="Email" value style="" autocomplete="off">
+										</div>
+										<div class="form-group">
+											<input type="password" placeholder="Password" class="form-control" data-val="true" data-val-required="A value is required" id="Password" name="Password" style="" autocomplete="off">
+										</div>
+										<div class="row">
+											<div class="m-b-lg">
+												<div class="col-xs-6">
+													<label style="padding-top: 6px;">
+														<input data-val="true" data-val-required="The RememberMe field is required" id="RememberMe" name="RememberMe" type="checkbox" value="true"> Remember Me
+													</label>
+												</div>
+												<div class="col-xs-6">
+													<button class="btn btn-block btn-primary-outline" type="submit">Login</button>
+												</div>
+											</div>
+										</div>
+										<div>
+											<a class="text-muted" href="/Account/ForgotPassword">I Forgot My Password</a>
+										</div>
+										<input name="__RequestVerificationToken" type="hidden" value="">
+										<input name="RememberMe" type="hidden" value="false">
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="center-block"> </footer>
+		<script src="/js/toolkit.min.js"></script>
+		<script src="/lib/jquery-validation/dist/jquery.validate.js"></script>
+		<script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+		<script src="/js/messages_ar.js"></script>
+	</body>
+</html> 
